@@ -74,6 +74,10 @@ OtpCreator.py|指定ユーザのOTP(ワンタイムパスワード)をクリッ�
 
 &lt;script src="http://gist-it.appspot.com/https://raw.githubusercontent.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/master/memo/CallMe.sh?&footer=0"&gt;&lt;/script&gt;
 
+<script src="http://gist-it.appspot.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/master/memo/CallMe.sh?&footer=0"></script>
+
+&lt;script src="http://gist-it.appspot.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/master/memo/CallMe.sh?&footer=0"&gt;&lt;/script&gt;
+
 [CallMe.sh](memo/CallMe.sh)参照。
 
 ```sh
