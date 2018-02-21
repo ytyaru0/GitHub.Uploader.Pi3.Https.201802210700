@@ -66,16 +66,9 @@ OtpCreator.py|指定ユーザのOTP(ワンタイムパスワード)をクリッ�
 
 ## 実行
 
-```sh
-#!/bin/bash
-user=GitHubユーザ名
-desc="リポジトリ説明"
-url=任意URL
-target=$(cd $(dirname $0) && pwd)
+[CallMe.sh](memo/CallMe.sh)参照。
 
-script=/tmp/GitHub.Uploader.Pi3.Https.201802210700/src/Uploader.py
-python3 ${script} "${target}" -u  "${user}" -d "${desc}" -l "${url}"
-```
+<script src="https://github.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/tree/master/memo/CallMe.sh?&footer=0"></script>
 
 画面に従い操作する。
 
