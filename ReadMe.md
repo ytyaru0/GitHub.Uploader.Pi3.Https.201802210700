@@ -68,7 +68,7 @@ OtpCreator.py|指定ユーザのOTP(ワンタイムパスワード)をクリッ�
 
 [CallMe.sh](memo/CallMe.sh)参照。
 
-<script src="https://github.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/tree/master/memo/CallMe.sh?&footer=0"></script>
+&lt;script src="https://github.com/ytyaru0/GitHub.Uploader.Pi3.Https.201802210700/tree/master/memo/CallMe.sh?&footer=0"&gt;&lt;/script&gt;
 
 画面に従い操作する。
 
