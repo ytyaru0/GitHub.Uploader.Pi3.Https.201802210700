@@ -119,8 +119,7 @@ Library|License|Copyright
 [certifi](https://github.com/certifi/python-certifi)|[MPL2.0](https://www.mozilla.org/en-US/MPL/2.0/)|[MPL2.0](https://github.com/certifi/python-certifi/blob/master/LICENSE)
 [chardet](https://github.com/chardet/chardet)|[LGPL2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ja.html)|[Copyright (C) 1991, 1999 Free Software Foundation, Inc.](https://github.com/chardet/chardet/blob/master/LICENSE)
 [idna](https://github.com/kjd/idna)|All rights reserved.|[Copyright (c) 2013-2017, Kim Davies. All rights reserved.](https://github.com/kjd/idna/blob/master/LICENSE.rst)
-[mako](https://github.com/zzzeek/mako)|[MIT](https://opensource.org/licenses/MIT)|[
-Copyright (C) 2006-2016 the Mako authors and contributors see AUTHORS file.](https://github.com/zzzeek/mako/blob/master/LICENSE)
+[mako](https://github.com/zzzeek/mako)|[MIT](https://opensource.org/licenses/MIT)|[Copyright (C) 2006-2016 the Mako authors and contributors see AUTHORS file.](https://github.com/zzzeek/mako/blob/master/LICENSE)
 [normality](https://github.com/pudo/normality)|[MIT](https://opensource.org/licenses/MIT)|[Copyright (c) 2013, Open Knowledge Foundation, Friedrich Lindenberg, Gregor Aisch](https://github.com/pudo/normality/blob/master/LICENSE)
 [dateutil](https://pypi.python.org/pypi/python-dateutil/2.6.1)|[Simplified BSD](https://opensource.org/licenses/BSD-2-Clause)|[© Copyright 2016, dateutil.](https://dateutil.readthedocs.io/en/stable/)
 [python-editor](https://github.com/fmoo/python-editor)|[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)|[fmoo/python-editor](https://github.com/fmoo/python-editor/blob/master/LICENSE)
