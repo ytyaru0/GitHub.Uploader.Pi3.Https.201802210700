@@ -7,7 +7,6 @@ class Setting:
         self.__path_dir_root = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
         self.__config = configparser.ConfigParser()
         self.__config.read(os.path.join(self.__path_dir_root, 'res/config.ini'))
-        print(os.path.join(self.__path_dir_root, 'res/config.ini'))
         self.__LoadDbPath()
         self.__GithubUser()
         

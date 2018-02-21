@@ -12,28 +12,7 @@ GitHubアップロードツール。
 
 ラズパイでSSH通信できなかったのでHTTPS通信に変えた。セキュリティ的に脆弱。
 
-## 経緯
-
-1. LinuxMint17.3のノートPCが壊れた
-1. ラズパイ3で動作するように移行した
-1. 環境構築するもSSH通信できず。原因不明
-    * `$ ssh -T git@{host}`で応答なし
-        * SSH鍵を作りなおした
-            * configに秘密鍵のファイルパスを設定した
-            * githubのSSHに公開鍵の内容を設定した
-        * `$ ssh-add`もやった (Mintではやらなくてもできてた)
-1. その際、ソースコードを一部変えた。また、インストールしたパッケージを`packages.txt`に残した。
-
-* Raspbian
-    * pyenv
-        * Python 3.6.4
-
-ソースコードはMint17.3のローカルにあった`v3.2`を使用。
-
-```sh
-(some_venv) $ pip freeze > packages.txt
-(some_venv) $ pip install -r packages.txt
-```
+[改変した経緯](memo/経緯_20180221.md)
 
 ## 改変箇所
 
@@ -52,9 +31,9 @@ GitHubアップロードツール。
 
 ## 今回
 
-* Raspberry Pi 3 Model B
-    * Raspbian
-        * pyenv
+* [Raspberry Pi](https://ja.wikipedia.org/wiki/Raspberry_Pi) 3 Model B
+    * [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) GNU/Linux 8.0 (jessie)
+        * [pyenv](http://ytyaru.hatenablog.com/entry/2019/01/06/000000)
             * Python 3.6.4
 
 ## 改変前
@@ -75,25 +54,38 @@ GitHubアップロードツール。
 
 コマンド|説明
 --------|----
-GitHubUserRegister.py|対象とするGitHubアカウントを本ツールに登録する。
-GitHubUploader.py|指定ディレクトリをリポジトリとして作成、アップロードする。
-GitHubOtpCreator.py|指定ユーザのOTP(ワンタイムパスワード)をクリップボードにコピーする。
+UserRegister.py|対象とするGitHubアカウントを本ツールに登録する。
+Uploader.py|指定ディレクトリをリポジトリとして作成、アップロードする。
+OtpCreator.py|指定ユーザのOTP(ワンタイムパスワード)をクリップボードにコピーする。
 
 今回追加したコマンドは`./database/src/contributions/SvgCreator.py`。以下のように実行する。
 
 # 準備
 
-`GitHubUserRegister.py`でユーザ登録済みであること。
+`UserRegister.py`でユーザ登録済みであること。
 
-# 実行
+## 実行
+
+```sh
+#!/bin/bash
+user=GitHubユーザ名
+desc="リポジトリ説明"
+url=任意URL
+target=$(cd $(dirname $0) && pwd)
+
+script=/tmp/GitHub.Uploader.Pi3.Https.201802210700/src/Uploader.py
+python3 ${script} "${target}" -u  "${user}" -d "${desc}" -l "${url}"
+```
+
+画面に従い操作する。
+
+### 草SVG生成ツール
 
 ```python
-$ bash ./database/src/contributions/outputsvg.sh
+$ bash ./src/database/contributions/outputsvg.sh
 ```
 
 一度作成したら動作しないようになっている。is_overwriteフラグで指定可能。変更したければコード修正すること。
-
-# 結果
 
 `GitHub.Contributions.{username}.{year}.svg`の書式で出力される。
 
